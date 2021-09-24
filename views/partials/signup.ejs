@@ -1,0 +1,43 @@
+<div class="loginmodal modal fade" id="signupModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="education-login-box">
+      <a
+        href="#"
+        data-dismiss="modal"
+        class="education-login-close education-color"
+        ><i class="icon-uniF106"></i
+      ></a>
+      <h4>Sign Up Now</h4>
+      <form action="http://localhost:3000/registerUser" method="POST">
+        <input
+          type="text"
+          value="Enter username*"
+          name="username"
+          onblur="if(this.value == '') { this.value ='Enter username*'; }"
+          onfocus="if(this.value =='Enter username*') { this.value = ''; }"
+        />
+        <input
+          type="text"
+          name="password"
+          value="Type your password*"
+          onblur="if(this.value == '') { this.value ='Type your password*'; }"
+          onfocus="if(this.value =='Type your password*') { this.value = ''; }"
+        />
+        <input
+          type="text"
+          value="Confirm your password*"
+          onblur="if(this.value == '') { this.value ='Confirm your password*'; }"
+          onfocus="if(this.value =='Confirm your password*') { this.value = ''; }"
+        />
+        <a href="#">Forget Password?</a>
+        <div class="clearfix"></div>
+        <label><input type="submit" value="Sign Up" /></label>
+      </form>
+      <p>
+        Not A Member Yet ?
+        <a href="#" class="education-color">Login - Now !</a>
+      </p>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
